@@ -50,13 +50,13 @@ For block 4, the following needs to be implemented
 * in `sqisign.py`, first try to implement uncompressed SQIsign.
     * Implement `hash_message` and `recompute_challenge` to recompute E1 --> E2.
     * Then implement `compute_uncompressed_response` and see if you can verify the
-    signatures in `good_signatures.py` by simply running `python3 isogeny.py`
+    signatures in `good_signatures.py` by simply running `python3 sqisign.py`
     * For compressed SQIsign, implement `deterministic_basis_two_torsion`, which
     you can test with `test_deterministic_basis_two_torstion`. 
     * If you have finished
     uncompressed verification, `hash_message` and `recompute_challenge` should work
     already. So finish `compute_compressed_response` only.
-    * Then run `isogeny.py` to verify your compressed signatures are running smoothly.
+    * Then run `sqisign.py` to verify your compressed signatures are running smoothly.
 * To be complete, you can run `pytest *` to verify everything is done correctly.
 * Celebrate! You have implemented SQIsign verification! Tell us your speed results.
 
